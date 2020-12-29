@@ -1,0 +1,24 @@
+.assignments-heading{
+    text-align: center;
+    width: 40%;
+    padding: 10px 0;
+    color: white;
+    margin: 15px auto;
+    background-color: #0593b3;
+}
+
+.assignments-ul{
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    width: 94%;
+}
+.assignments-li{
+    padding: 0 10px;
+    flex-basis: 23%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
