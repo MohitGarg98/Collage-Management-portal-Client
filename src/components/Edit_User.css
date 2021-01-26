@@ -1,0 +1,30 @@
+.edit-heading{
+    margin: 10px auto;
+    width: 20%;
+}
+.edit-user-profile{
+    display: flex;
+}
+.input-field{
+    display: block;
+}
+.change-name-form, .change-password-form{
+    border: 1px solid;
+    background-color: aliceblue;
+    width: 30%;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 20px;
+}
+.change-name-btn{
+    margin-top: 10px;
+    background-color: rgb(89, 89, 243);
+    outline: none;
+    border: 0px;
+    padding: 10px;
+    color: white;
+}
+.change-password-form{
+    height: auto;
+}

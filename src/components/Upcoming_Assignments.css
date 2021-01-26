@@ -1,24 +1,50 @@
-.assignments-heading{
+html{
+    height: 100%;
+}
+body{
+    background-image: url('./images/bkimg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.up-assignments-container{
+    width: 70%;
+    border: 0px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 0px 3px 1px rgb(180, 178, 178);
+    height: auto;
+    margin: 25px auto;
+    padding-bottom: 8px;
+}
+.up-assignments-heading{
     text-align: center;
     width: 40%;
     padding: 10px 0;
     color: white;
     margin: 15px auto;
-    background-color: #0593b3;
 }
-
-.assignments-ul{
+.assignments-heading-ul, .assignments-ul{
     list-style: none;
     display: flex;
     font-size: 20px;
     font-weight: bold;
     width: 94%;
+    justify-content: space-between;
 }
-.assignments-li{
+.assignments-heading-li, .assignments-li{
     padding: 0 10px;
     flex-basis: 23%;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    white-space: nowrap;
+    width: auto;
+    padding: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.assignments-li{
+    font-weight: 500;
+    padding: 3px;
+    margin: 3px;
 }

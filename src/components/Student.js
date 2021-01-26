@@ -1,12 +1,21 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+import Cookies from 'universal-cookie';
 import "./Student.css";
 
 function Student() {
+    const cookies = new Cookies();
+
+    function logout() {
+        cookies.remove('student');
+    }
     return (
         <div>
-            <div className="assignments-container">
-                <a className="assignments”-link" href="/upcoming-assignments">Upcoming Assignments</a>
-                <a className="assignments”-link" href="/submitted-assignments">Submitted Assignments</a>
+            <a href="/edit-student" className="edit-profile">Edit Profile</a>
+            <div className="assignments-name-container">
+                <Link to="/upcoming-assignments" className="assignments-link" >Upcoming Assignments</Link>                
+                <Link to="/submitted-files" className="assignments-link" >Submitted Assignments</Link>
+                <a className="assignments-link logout-link" onClick={logout} href="/student-login">Logout</a>
             </div>
         </div>
     )

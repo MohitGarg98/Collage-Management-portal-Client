@@ -1,27 +1,47 @@
-body{
-    background-color: aqua;
-
-}
-.assignments-container{
-    border: 2px solid;
+.assignments-name-container{
     display: inline-block;
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 30vw;
-    height: 19vh;
+    height: auto;
+    width: 32%;
 }
-
-.assignments”-link{
-    display: inline-block;
-    width: 99.9%;
+.assignments-link, .logout-link{
+    display: block;
     height: 55px;
-    background-color: aquamarine;
-    border: 1px solid black;
+    margin: 20px auto;
+    background-color: rgb(7, 104, 143);
     text-align: center;
     line-height: 50px;
     text-decoration: none;
     font-size: 22px;
-    color: black;
+    color: white;
+    border-radius: 20px;
+    width: 85%;
+}
+.assignments-link:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(6, 89, 122);
+}
+.poster{
+    width: 100%;
+    height: 75vh;
+}
+.logout-link{
+    width: 30%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    top: 80px;
+    background-color: rgb(233, 58, 58);
+}
+.logout-link:hover{
+    background-color: rgb(207, 20, 20);
+}
+.edit-profile{
+    position: absolute;
+    right: 30px;
+    top: 10px;
 }
