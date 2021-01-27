@@ -44,16 +44,16 @@ function Edit_User(props) {
                 <form onSubmit={changeName} className="change-name-form">
                     <h4>Change Name</h4>
                     <label htmlFor="change-name">Name</label>
-                    <input name="name" type="text" id="change-name" className="input-field"/>
+                    <input name="name" type="text" id="change-name" className="input-field" required autoComplete="off"/>
                     <input type="submit" value="Change Name" className="change-name-btn"/>
                 </form>
                 <form onSubmit={changePassword} className="change-password-form">
                     <h4>Change Password</h4>
                     <label htmlFor="change-password">Password</label>
-                    <input name="password" type="password" id="change-password" className="input-field"/>
+                    <input name="password" type="password" id="change-password" className="input-field" required/>
                     <label htmlFor="confirm-password">Confirm Password</label>
-                    <input name="confirm_password" type="password" id="confirm-password" className="input-field"/>
-                    <input type="submit" value="Change Name" className="change-name-btn"/>
+                    <input name="confirm_password" type="password" id="confirm-password" className="input-field" required/>
+                    <input type="submit" value="Change Password" className="change-name-btn"/>
                 </form>
             </div>
         </div>

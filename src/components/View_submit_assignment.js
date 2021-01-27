@@ -28,7 +28,7 @@ function View_assignment(props) {
             {user === "teacher" && props.location.file !== "assignment" ?
             <div className="submit-assignment-form">
                 <form onSubmit={submitGrade}>
-                    <input type="text" name="grade" className="grade-input" placeholder="Enter Grade"/><input type="submit" value="Submit" className="submit-grade-btn"/>  
+                    <input type="text" name="grade" className="grade-input" placeholder="Enter Grade" autoComplete="off"/><input type="submit" value="Submit" className="submit-grade-btn"/>  
                 </form>
             </div> : null}
         </div> 
